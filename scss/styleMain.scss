@@ -1,0 +1,392 @@
+$naranja: #F68E34;
+$naranjaHover: #da7823;
+$fondoBaner: rgb(131, 131, 131);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.navbar{
+    justify-content: space-between;
+
+}
+.navbar-brand{
+    margin-left: 20px;
+}
+/* lo hago para que el nav me aparezca del lado derecho*/
+.navbar-nav{
+    justify-content: end;
+}
+/* lo hago para que el nav me aparezca del lado derecho*/
+
+body{
+    height: 100%;
+}
+.logo{
+    padding: 10px;
+    margin-left: 30px;
+    height: 70px;
+}
+
+nav{
+
+    margin-right: 30px;
+}
+
+.menu{
+    .menu__links{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    padding: 0.2em;
+    }
+    .menu__links:hover{
+        border-bottom: 3px solid $naranja;
+    }
+}
+
+
+/* BANNER */
+.slider{
+    .slider__titulo{
+
+        position: absolute;
+        z-index: 100;
+        font-size: 5vw;
+        width: 1200px;
+        text-align: end;
+        margin-left: 20vw;
+        margin-top: 20vh;
+        color: rgb(255, 255, 255);
+        letter-spacing: 10%;
+
+    }
+    .slider__uno{
+        background-image: url("../images/carouselUno.png");
+        height: 800px;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .slider__dos{
+        @extend .slider__uno;
+        background-image: url("../images/carouselDos.png");
+
+    }.slider__tres{
+        @extend .slider__uno;
+        background-image: url("../images/carouselTres.png");
+    }
+
+}
+.containerPasos{
+
+    height: 350px;
+    background-color: $fondoBaner;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .containerPasosImg{
+        @if $fondoBaner != white{
+            /* si es diferente de blanco pongo los iconos blancos con filter*/
+            img{
+                filter: invert(1);
+            }
+        }
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        font-weight: 900;
+        img{
+            margin: 10px;
+            width: 90px;
+        }
+        .lampara{
+            width: 60px;
+        }
+        .flecha{
+            height: 70px;
+        }
+        
+    }
+
+}
+
+//Productos//
+.card :hover{
+    transition: 500ms;
+    transform: scale(1.2,1.2);
+
+
+}
+
+    .card-title{
+        text-align: center;
+    }
+
+.containerCards{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.seccionProductos{
+
+    img:hover{
+        transition: 500ms;
+        transform: scale(1.2,1.2);
+    }
+}
+//Productos//
+
+/* FOOTER */
+footer{
+    .piePagina{
+
+    display: flex;
+
+    justify-content: space-around;
+    height: 400px;
+    background-image: linear-gradient(#4B4B4D, #3d3d3d);
+    color:white;
+    font-size: 20px;
+    border-top: solid;
+    border-width: 4px;
+    border-color: $naranja;
+
+    .piePagina__redes{
+        display: flex;
+        margin-top: 50px;
+        i{
+            margin: 20px;
+        }
+        p{
+            margin: 15px;
+            display: inline-block;
+        }
+        ul{
+            list-style-type: none;
+            margin: 15px;
+        }
+    }
+    .piePagina__contacto{
+        margin-top: 50px;
+        p{
+            margin: 15px;;
+            display: inline-block;
+        }
+        ul{
+            list-style-type: none;
+            margin: 15px;
+        }
+    }
+
+}
+    .copyright{
+        width: 100%;
+        height: 70px;
+        padding: 20px;
+        text-align: center;
+        background-color: rgb(51, 51, 51);
+        color: white;
+}
+}
+
+
+/* SERVICIOS */
+.containerServicio{
+    background-color: #F3F3F3;
+    margin: 20px;
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    border-bottom: solid;
+    border-width: 4px;
+    border-color: $naranja;
+
+    .containerServicio__titulo{
+        padding-left: 40px;
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    .containerServicio__texto{
+        text-align: justify;
+        padding: 40px;
+        font-size: 25px;
+    }
+
+    .contenedor{
+        width: 550px;
+        height: 270px;
+    }
+    .contenido{
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+
+
+
+.contenedorMateriales{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    .contenedorMateriales__filamentos{
+        width: 900px;
+        margin-top: 24vh;
+    }
+    
+
+}
+.encabezadoTabla{
+    background-color: #C4C4C4;
+    text-decoration: underline $naranja;
+}
+td{
+    background-color: #EAEAEA;
+}
+table{
+    background-color: #EAEAEA;
+    margin: 2rem;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+
+}
+form{
+    font-size: 28px;
+}
+/* CONTACTO */
+.contenedorContacto{
+    display: flex;
+}
+.contenedorImagenContacto{
+    margin: 40px;
+    width: 520px;
+    height: 436px;
+}
+.contenedorFormulario{
+    margin: 40px;
+}
+.imagenContacto{
+    object-fit: cover;
+}
+.form{
+    display: inline-block;
+    margin: 20px;
+}
+.contenedorFormulario input{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+/*intente reutilizar el codigo para los dos inputs pero no me funcionaba*/
+input[type=submit] {
+    width: 140px;
+    height: 40px;
+    background-color: $naranja;
+    color: white;
+    margin: 8px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: $naranjaHover;
+}
+input[type=reset] {
+    width: 140px;
+    height: 40px;
+    background-color: $naranja;
+    color: white;
+    margin: 8px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+input[type=reset]:hover {
+    background-color: $naranjaHover;
+}
+
+textarea{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100px;
+}
+
+@media only screen and ( max-width: 765px){
+    .titulo{
+        font-size: 36px;
+    }
+    .piePagina{
+        height: 500px;
+    }
+    .piePagina__redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+
+        i{
+            margin: 20px;
+        }
+        .piePagina__copyright{
+            margin: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+    }
+
+    //MOBILE MATERIALES//
+    .contenedorMateriales{
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .contenedorMateriales__filamentos{
+            width: 600px;
+            margin-top: 10vh;
+        }
+    }
+    .containerPasos{
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        height: auto;
+        margin-bottom: 100px;
+        flex-direction: column;
+        font-size: 10px;
+        .containerPasosImg{
+            text-align: center;
+            font-weight: 900;
+            img{
+                margin: 10px;
+                width: 90px;
+            }
+            .lampara{
+                width: 60px;
+            }
+            .flecha{
+                transform: rotate(90deg);
+                height: 80px;
+            }
+            
+        }
+    
+    }
+}

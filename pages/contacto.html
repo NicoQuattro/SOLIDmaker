@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solid Maker</title>
+    <meta name="description" content="pagina de contacto, web de impresión 3D">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/stylesScss.css"> <!--hoja de sass-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+    <header>
+      <nav class="navbar navbar-light navbar-expand-lg d-flex justify-content-between">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../logo.png" width="190" height="60" alt="logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="menu navbar-nav collapse navbar-collapse" id="navbarTogglerDemo02">
+          <a class="menu__links nav-link" href="../index.html">Inicio</a>
+          <a class="menu__links nav-link" href="productos.html">Productos</a>
+          <a class="menu__links nav-link" href="servicios.html">Servicios</a>
+          <a class="menu__links nav-link" href="materiales.html">Materiales</a>
+          <a class="menu__links nav-link active" href="contacto.html">Contacto</a>
+        </div>
+
+      </nav>
+    </header>
+    <main>
+        <div class="contenedorContacto">
+            <img src="../images/imagen3D.png" class="contenedorImagenContacto imagenContacto" alt="imagen contacto">
+            <div class= "contenedorFormulario">
+                <form>
+                    <label for=name>Nombre</label>
+                    <input type="text" id= name required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" id=email required>
+        
+                    <label for="phone">Telefono</label>
+                    <input type="tel" id="phone" required>
+            
+                    <label for="message">Ingrese un mensaje</label>
+                    <textarea name="mensaje" for="mensaje" maxlength="300"></textarea>
+                    
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Restablecer">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer >
+      <div class="piePagina">
+        <div class="piePagina__redes">
+          <ul>
+            <li><p>NUESTRAS REDES</p></li>
+            <li> <i class="bi bi-instagram redesSociales"><p>Instagram</p></i></li>
+            <li> <i class="bi bi-facebook redesSociales"><p>Facebook</p></i></li>
+            <li> <i class="bi bi-youtube redesSociales"><p>Youtube</p></i></li>
+          </ul>
+        </div>
+
+        <div class="piePagina__contacto">
+          <ul>
+            <li>CONTACTANOS</li>
+            <li><i class="bi bi-caret-right-fill"></i><a href="contacto.html"><p>Pagina de contacto</p> </a></li>
+            <li><i class="bi bi-envelope-fill"><p>solid3dimpresiones@gmail.com</p></i></li>
+            <li><i class="bi bi-geo-alt-fill"></i><p>Direccion: 56 Nº 723</p> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p> SOLID Maker © 2021 | Nicolas Quattrocchi</p>
+      </div>
+
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
