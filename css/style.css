@@ -103,194 +103,186 @@ nav {
   transform: scale(1.2, 1.2); }
 
 /* FOOTER */
-footer .piePagina {
-  display: flex;
-  justify-content: space-around;
-  height: 400px;
-  background-image: linear-gradient(#4B4B4D, #3d3d3d);
-  color: white;
-  font-size: 20px;
-  border-top: solid;
-  border-width: 4px;
-  border-color: #F68E34; }
-  footer .piePagina .piePagina__redes {
+footer {
+  /* SERVICIOS */
+  /* CONTACTO */
+  /*intente reutilizar el codigo para los dos inputs pero no me funcionaba*/ }
+  footer .piePagina {
     display: flex;
-    margin-top: 50px; }
-    footer .piePagina .piePagina__redes i {
-      margin: 20px; }
-    footer .piePagina .piePagina__redes p {
-      margin: 15px;
-      display: inline-block; }
-    footer .piePagina .piePagina__redes ul {
-      list-style-type: none;
-      margin: 15px; }
-  footer .piePagina .piePagina__contacto {
-    margin-top: 50px; }
-    footer .piePagina .piePagina__contacto p {
-      margin: 15px;
-      display: inline-block; }
-    footer .piePagina .piePagina__contacto ul {
-      list-style-type: none;
-      margin: 15px; }
-
-footer .copyright {
-  width: 100%;
-  height: 70px;
-  padding: 20px;
-  text-align: center;
-  background-color: #333333;
-  color: white; }
-
-/* SERVICIOS */
-.containerServicio {
-  background-color: #F3F3F3;
-  margin: 20px;
-  display: flex;
-  width: 100%;
-  height: 20rem;
-  border-bottom: solid;
-  border-width: 4px;
-  border-color: #F68E34; }
-  .containerServicio .containerServicio__titulo {
-    padding-left: 40px;
-    padding-top: 30px;
-    font-size: 40px; }
-  .containerServicio .containerServicio__texto {
-    text-align: justify;
-    padding: 40px;
-    font-size: 25px; }
-  .containerServicio .contenedor {
-    width: 550px;
-    height: 270px; }
-  .containerServicio .contenido {
-    height: 100%;
-    object-fit: cover; }
-
-.contenedorMateriales {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  .contenedorMateriales .contenedorMateriales__filamentos {
-    width: 900px;
-    margin-top: 24vh; }
-
-.encabezadoTabla {
-  background-color: #C4C4C4;
-  text-decoration: underline #F68E34; }
-
-td {
-  background-color: #EAEAEA; }
-
-table {
-  background-color: #EAEAEA;
-  margin: 2rem;
-  display: inline-block;
-  font-size: 30px;
-  text-align: center; }
-
-form {
-  font-size: 28px; }
-
-/* CONTACTO */
-.contenedorContacto {
-  display: flex; }
-
-.contenedorImagenContacto {
-  margin: 40px;
-  width: 520px;
-  height: 436px; }
-
-.contenedorFormulario {
-  margin: 40px; }
-
-.imagenContacto {
-  object-fit: cover; }
-
-.form {
-  display: inline-block;
-  margin: 20px; }
-
-.contenedorFormulario input {
-  width: 100%;
-  height: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 15px; }
-
-/*intente reutilizar el codigo para los dos inputs pero no me funcionaba*/
-input[type=submit] {
-  width: 140px;
-  height: 40px;
-  background-color: #F68E34;
-  color: white;
-  margin: 8px 0;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer; }
-
-input[type=submit]:hover {
-  background-color: #da7823; }
-
-input[type=reset] {
-  width: 140px;
-  height: 40px;
-  background-color: #F68E34;
-  color: white;
-  margin: 8px 0;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer; }
-
-input[type=reset]:hover {
-  background-color: #da7823; }
-
-textarea {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  width: 100%;
-  height: 100px; }
-
-@media only screen and (max-width: 765px) {
-  .titulo {
-    font-size: 36px; }
-  .piePagina {
-    height: 500px; }
-  .piePagina__redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px; }
-    .piePagina__redes i {
-      margin: 20px; }
-    .piePagina__redes .piePagina__copyright {
-      margin: 10px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      display: inline-block; }
-  .contenedorMateriales {
-    align-items: center;
-    flex-direction: column-reverse; }
-    .contenedorMateriales .contenedorMateriales__filamentos {
-      width: 600px;
-      margin-top: 10vh; }
-  .containerPasos {
+    justify-content: space-around;
+    height: 400px;
+    background-image: linear-gradient(#4B4B4D, #3d3d3d);
+    color: white;
+    font-size: 20px;
+    border-top: solid;
+    border-width: 4px;
+    border-color: #F68E34; }
+    footer .piePagina .piePagina__redes {
+      display: flex;
+      margin-top: 50px; }
+      footer .piePagina .piePagina__redes i {
+        margin: 20px; }
+      footer .piePagina .piePagina__redes p {
+        margin: 15px;
+        display: inline-block; }
+      footer .piePagina .piePagina__redes ul {
+        list-style-type: none;
+        margin: 15px; }
+    footer .piePagina .piePagina__contacto {
+      margin-top: 50px; }
+      footer .piePagina .piePagina__contacto p {
+        margin: 15px;
+        display: inline-block; }
+      footer .piePagina .piePagina__contacto ul {
+        list-style-type: none;
+        margin: 15px; }
+    footer .piePagina .piePagina__newsletter {
+      margin-top: 65px; }
+      footer .piePagina .piePagina__newsletter .inputNews {
+        height: 50px;
+        width: 300px;
+        font-size: 20px;
+        border-radius: 5px; }
+      footer .piePagina .piePagina__newsletter .inputButtom {
+        height: 48px;
+        font-size: 20px; }
+  footer .copyright {
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    height: auto;
-    margin-bottom: 100px;
-    flex-direction: column;
-    font-size: 10px; }
-    .containerPasos .containerPasosImg {
-      text-align: center;
-      font-weight: 900; }
-      .containerPasos .containerPasosImg img {
+    height: 70px;
+    padding: 20px;
+    text-align: center;
+    background-color: #333333;
+    color: white; }
+  footer .containerServicio {
+    background-color: #F3F3F3;
+    margin: 20px;
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    border-bottom: solid;
+    border-width: 4px;
+    border-color: #F68E34; }
+    footer .containerServicio .containerServicio__titulo {
+      padding-left: 40px;
+      padding-top: 30px;
+      font-size: 40px; }
+    footer .containerServicio .containerServicio__texto {
+      text-align: justify;
+      padding: 40px;
+      font-size: 25px; }
+    footer .containerServicio .contenedor {
+      width: 550px;
+      height: 270px; }
+    footer .containerServicio .contenido {
+      height: 100%;
+      object-fit: cover; }
+  footer .contenedorMateriales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    footer .contenedorMateriales .contenedorMateriales__filamentos {
+      width: 900px;
+      margin-top: 24vh; }
+  footer .encabezadoTabla {
+    background-color: #C4C4C4;
+    text-decoration: underline #F68E34; }
+  footer td {
+    background-color: #EAEAEA; }
+  footer table {
+    background-color: #EAEAEA;
+    margin: 2rem;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center; }
+  footer form {
+    font-size: 28px; }
+  footer .contenedorContacto {
+    display: flex; }
+  footer .contenedorImagenContacto {
+    margin: 40px;
+    width: 520px;
+    height: 436px; }
+  footer .contenedorFormulario {
+    margin: 40px; }
+  footer .imagenContacto {
+    object-fit: cover; }
+  footer .form {
+    display: inline-block;
+    margin: 20px; }
+  footer .contenedorFormulario input {
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px; }
+  footer input[type=submit] {
+    width: 140px;
+    height: 40px;
+    background-color: #F68E34;
+    color: white;
+    margin: 8px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; }
+  footer input[type=submit]:hover {
+    background-color: #da7823; }
+  footer input[type=reset] {
+    width: 140px;
+    height: 40px;
+    background-color: #F68E34;
+    color: white;
+    margin: 8px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; }
+  footer input[type=reset]:hover {
+    background-color: #da7823; }
+  footer textarea {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100px; }
+  @media only screen and (max-width: 765px) {
+    footer .titulo {
+      font-size: 36px; }
+    footer .piePagina {
+      height: 500px; }
+    footer .piePagina__redes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px; }
+      footer .piePagina__redes i {
+        margin: 20px; }
+      footer .piePagina__redes .piePagina__copyright {
         margin: 10px;
-        width: 90px; }
-      .containerPasos .containerPasosImg .lampara {
-        width: 60px; }
-      .containerPasos .containerPasosImg .flecha {
-        transform: rotate(90deg);
-        height: 80px; } }
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: inline-block; }
+    footer .contenedorMateriales {
+      align-items: center;
+      flex-direction: column-reverse; }
+      footer .contenedorMateriales .contenedorMateriales__filamentos {
+        width: 600px;
+        margin-top: 10vh; }
+    footer .containerPasos {
+      width: 100%;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      height: auto;
+      margin-bottom: 100px;
+      flex-direction: column;
+      font-size: 10px; }
+      footer .containerPasos .containerPasosImg {
+        text-align: center;
+        font-weight: 900; }
+        footer .containerPasos .containerPasosImg img {
+          margin: 10px;
+          width: 90px; }
+        footer .containerPasos .containerPasosImg .lampara {
+          width: 60px; }
+        footer .containerPasos .containerPasosImg .flecha {
+          transform: rotate(90deg);
+          height: 80px; } }

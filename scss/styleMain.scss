@@ -187,6 +187,21 @@ footer{
             margin: 15px;
         }
     }
+    .piePagina__newsletter{
+        margin-top: 65px;
+
+        .inputNews{
+            height: 50px;
+            width: 300px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        .inputButtom{
+            height: 48px;
+            font-size: 20px;
+        }
+
+    }
 
 }
     .copyright{
@@ -196,7 +211,6 @@ footer{
         text-align: center;
         background-color: rgb(51, 51, 51);
         color: white;
-}
 }
 
 
@@ -232,8 +246,6 @@ footer{
     }
     
 }
-
-
 
 .contenedorMateriales{
     display: flex;
@@ -389,4 +401,5 @@ textarea{
         }
     
     }
+}
 }
