@@ -3,6 +3,13 @@ $naranjaHover: #da7823;
 $fondoBaner: rgb(131, 131, 131);
 
 
+@mixin centrarTexto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -55,17 +62,12 @@ nav{
 /* BANNER */
 .slider{
     .slider__titulo{
-
-        position: absolute;
-        z-index: 100;
+        @include centrarTexto();
         font-size: 5vw;
-        width: 1200px;
-        text-align: end;
-        margin-left: 20vw;
-        margin-top: 20vh;
-        color: rgb(255, 255, 255);
+        text-align: center;
+        color: white;
         letter-spacing: 10%;
-
+        z-index: 100;
     }
     .slider__uno{
         background-image: url("../images/carouselUno.png");
@@ -118,17 +120,49 @@ nav{
 
 }
 
-//Productos//
-.card :hover{
-    transition: 500ms;
-    transform: scale(1.2,1.2);
+.counter-up{
+    width: 100%;
+    background-color: grey;
+    height: 300px;
+    margin-bottom: 100px;
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 20px;
+            flex-direction: column;
+            .icon{
+                font-size: 40px;
+                color: white;
+            }
+            .counter{
+                font-size: 50px;
+                color:white;
+            }
+            .text{
+                font-weight: 400;
+                color: white;
+            }
+        }
+    }
+}
 
+//Productos//
+.card{
+    box-shadow: 0 3px 7px -1px rgba(#000, .1);
 
 }
 
-    .card-title{
-        text-align: center;
-    }
+.card-title{
+    text-align: center;
+}
 
 .containerCards{
     margin-top: 30px;
@@ -140,8 +174,7 @@ nav{
 .seccionProductos{
 
     img:hover{
-        transition: 500ms;
-        transform: scale(1.2,1.2);
+
     }
 }
 //Productos//
@@ -212,28 +245,34 @@ footer{
         background-color: rgb(51, 51, 51);
         color: white;
 }
+}
 
 
 /* SERVICIOS */
-.containerServicio{
-    background-color: #F3F3F3;
-    margin: 20px;
-    display: flex;
-    width: 100%;
-    height: 20rem;
-    border-bottom: solid;
-    border-width: 4px;
-    border-color: $naranja;
+.contenedorServicio{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 12vw;
+    margin-right: 12vw;
 
-    .containerServicio__titulo{
+
+
+.servicio{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    max-width: 1800px;
+    background-color: #F3F3F3;
+    box-shadow: 0 3px 7px -1px rgba(#000, .15);
+
+    .servicio__titulo{
         padding-left: 40px;
         padding-top: 30px;
-        font-size: 40px;
+        font-size: 35px;
     }
-    .containerServicio__texto{
+    .servicio__texto{
         text-align: justify;
         padding: 40px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .contenedor{
@@ -245,6 +284,7 @@ footer{
         object-fit: cover;
     }
     
+}
 }
 
 .contenedorMateriales{
@@ -278,13 +318,69 @@ form{
     font-size: 28px;
 }
 /* CONTACTO */
+.bannerContacto{
+    width: 100%;
+    height: 700px;
+    background-image: url("../images/banner.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h4{
+        @include centrarTexto();
+        color: white;
+        font-size: 5vw;
+    }
+    
+}
 .contenedorContacto{
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    .contenedorTexto{
+        text-align: start;
+        width: 500px;
+    }
+}
+.contenedorInformacion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    i{
+        margin: 20px;
+    }
+    p{
+        margin: 15px;
+        display: inline-block;
+    }
+    ul{
+        list-style-type: none;
+        margin: 15px;
+    }
+    }
+
+.form-group{
+    font-size: 20px;
+    margin: 12px;
+    input, textarea{
+        width: 30vw;
+        max-width: 700px;
+    }
+    textarea{
+        height: 200px;
+    }
+}
+.contenedorFormulario{
+    button{
+        margin: 12px;
+        width: 150px;
+    }
 }
 .contenedorImagenContacto{
     margin: 40px;
-    width: 520px;
-    height: 436px;
+    width: 35vw;
+    height: 536px;
+    border-radius: 7px;
 }
 .contenedorFormulario{
     margin: 40px;
@@ -292,17 +388,8 @@ form{
 .imagenContacto{
     object-fit: cover;
 }
-.form{
-    display: inline-block;
-    margin: 20px;
-}
-.contenedorFormulario input{
-    width: 100%;
-    height: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 15px;
-}
+
+
 /*intente reutilizar el codigo para los dos inputs pero no me funcionaba*/
 input[type=submit] {
     width: 140px;
@@ -317,28 +404,6 @@ input[type=submit] {
 }
 input[type=submit]:hover {
     background-color: $naranjaHover;
-}
-input[type=reset] {
-    width: 140px;
-    height: 40px;
-    background-color: $naranja;
-    color: white;
-    margin: 8px 0;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    
-}
-input[type=reset]:hover {
-    background-color: $naranjaHover;
-}
-
-textarea{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    width: 100%;
-    height: 100px;
 }
 
 @media only screen and ( max-width: 765px){
@@ -364,6 +429,37 @@ textarea{
             display: inline-block;
         }
     }
+    .piePagina__newsletter{
+        display: none;
+    }
+    //CONTADOR//
+    .counter-up{
+        padding: 50px, 50px 0 50px;
+        height: 550px;
+
+        .content .box{
+            width: calc(50% - 30px);
+            margin-bottom: 50px;
+        }
+    }
+    //CONTACTO//
+    .contenedorImagenContacto{
+        width: 85vw;
+    }
+    .contenedorContacto{
+        flex-direction: column;
+
+    }
+    .form-group input,
+    .form-group textarea{
+            width: 80vw;
+            max-width: 700px;
+            textarea{
+                height: 100px;
+            }
+        }
+    
+
 
     //MOBILE MATERIALES//
     .contenedorMateriales{
@@ -401,5 +497,4 @@ textarea{
         }
     
     }
-}
 }

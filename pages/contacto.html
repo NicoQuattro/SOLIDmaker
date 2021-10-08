@@ -37,28 +37,48 @@
       </nav>
     </header>
     <main>
+        <div class="bannerContacto">
+          <h4>Contacto</h4>
+        </div>
         <div class="contenedorContacto">
-            <img src="../images/imagen3D.png" class="contenedorImagenContacto imagenContacto" alt="imagen contacto">
+            <div class="contenedorInformacion">
+              <p class="contenedorTexto">Comunicate con nosotros por presupuestos o consultas, que esperas para contarnos tu idea?</p>
+              <ul>
+                <li><i class="bi bi-envelope-fill"></i><p>solid3dimpresiones@gmail.com</p> </li>
+                <li><i class="bi bi-geo-alt-fill"></i><p>56 Nº 723</p> </li>
+                <li><i class="bi bi-telephone"></i><p>221 314 - 3661</p> </li>
+              </ul>
+            </div>
             <div class= "contenedorFormulario">
-                <form>
-                    <label for=name>Nombre</label>
-                    <input type="text" id= name required>
-        
-                    <label for="email">Email</label>
-                    <input type="email" id=email required>
-        
-                    <label for="phone">Telefono</label>
-                    <input type="tel" id="phone" required>
-            
-                    <label for="message">Ingrese un mensaje</label>
-                    <textarea name="mensaje" for="mensaje" maxlength="300"></textarea>
-                    
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Restablecer">
-                </form>
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Nombre</label>
+                  <input type="text" class="form-control" id= name required>
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Telefono</label>
+                  <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id=email required>
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Ingrese un mensaje</label>
+                  <textarea type="text" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
             </div>
         </div>
-    </main>
+
+        
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=solid%20maker&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe><a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">google maps code for wordpress</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+          </div>    
+        </main>
 
     <footer >
       <div class="piePagina">
