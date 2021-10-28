@@ -64,7 +64,7 @@ nav {
 
 .containerPasos {
   height: 350px;
-  background-color: #838383;
+  background-color: #5a5a5c;
   margin-bottom: 100px;
   display: flex;
   align-items: center;
@@ -127,8 +127,8 @@ nav {
 
 /* FOOTER */
 footer .piePagina {
+  justify-content: center;
   display: flex;
-  justify-content: space-around;
   height: 400px;
   background-image: linear-gradient(#4B4B4D, #3d3d3d);
   color: white;
@@ -138,6 +138,8 @@ footer .piePagina {
   border-color: #F68E34; }
   footer .piePagina .piePagina__redes {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     margin-top: 50px; }
     footer .piePagina .piePagina__redes i {
       margin: 20px; }
@@ -148,7 +150,14 @@ footer .piePagina {
       list-style-type: none;
       margin: 15px; }
   footer .piePagina .piePagina__contacto {
-    margin-top: 50px; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-left: 180px;
+    padding-right: 180px; }
+    footer .piePagina .piePagina__contacto li a {
+      color: white; }
     footer .piePagina .piePagina__contacto p {
       margin: 15px;
       display: inline-block; }
@@ -187,7 +196,7 @@ footer .copyright {
     background-color: #F3F3F3;
     box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.15); }
     .contenedorServicio .servicio .servicio__titulo {
-      padding-left: 40px;
+      text-align: center;
       padding-top: 30px;
       font-size: 35px; }
     .contenedorServicio .servicio .servicio__texto {
@@ -210,8 +219,9 @@ footer .copyright {
     margin-top: 24vh; }
 
 .encabezadoTabla {
-  background-color: #C4C4C4;
-  text-decoration: underline #F68E34; }
+  background-color: #C4C4C4; }
+  .encabezadoTabla th {
+    padding: 4px; }
 
 td {
   background-color: #EAEAEA; }
@@ -229,7 +239,7 @@ form {
 /* CONTACTO */
 .bannerContacto {
   width: 100%;
-  height: 600px;
+  height: 700px;
   background-image: url("../images/banner.png");
   background-position: top;
   background-repeat: no-repeat;
@@ -245,15 +255,15 @@ form {
 .contenedorContacto {
   display: flex;
   width: 100%;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  margin-top: 40px; }
   .contenedorContacto .contenedorTexto {
+    font-size: 24px;
     text-align: start;
-    width: 500px; }
+    max-width: 500px; }
 
 .contenedorInformacion {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  font-size: 22px;
   margin-top: 50px; }
   .contenedorInformacion i {
     margin: 20px; }
@@ -305,30 +315,40 @@ input[type=submit]:hover {
   background-color: #da7823; }
 
 @media only screen and (max-width: 765px) {
+  .slider .slider__titulo {
+    font-size: 52px; }
   .titulo {
     font-size: 36px; }
-  .piePagina {
-    height: 500px; }
-  .piePagina__redes {
-    display: flex;
+  footer .piePagina {
     flex-direction: column;
-    align-items: center;
-    margin: 10px; }
-    .piePagina__redes i {
-      margin: 20px; }
-    .piePagina__redes .piePagina__copyright {
-      margin: 10px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      display: inline-block; }
-  .piePagina__newsletter {
-    display: none; }
+    justify-content: space-evenly;
+    height: 750px; }
+    footer .piePagina .piePagina__contacto {
+      padding: 0;
+      font-size: 16px; }
+    footer .piePagina .piePagina__redes {
+      align-items: center;
+      text-align: center;
+      margin: 10px; }
+      footer .piePagina .piePagina__redes i {
+        margin: 20px; }
+      footer .piePagina .piePagina__redes .redes {
+        display: none; }
+      footer .piePagina .piePagina__redes .itemsRedes {
+        padding-left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+    footer .piePagina .piePagina__newsletter {
+      display: none; }
   .counter-up {
     padding: 50px, 50px 0 50px;
     height: 550px; }
     .counter-up .content .box {
       width: calc(50% - 30px);
       margin-bottom: 50px; }
+  .bannerContacto h4 {
+    font-size: 60px; }
   .contenedorImagenContacto {
     width: 85vw; }
   .contenedorContacto {
@@ -339,12 +359,25 @@ input[type=submit]:hover {
     .form-group input textarea,
     .form-group textarea textarea {
       height: 100px; }
+  .contenedorContacto .contenedorTexto {
+    font-size: 18px; }
+  .contenedorInformacion {
+    font-size: 15px; }
+  .contenedorServicio .servicio .servicio__titulo {
+    padding-top: 30px;
+    font-size: 20px; }
+  .contenedorServicio .servicio .servicio__texto {
+    text-align: justify;
+    padding: 13px;
+    font-size: 13px; }
   .contenedorMateriales {
     align-items: center;
     flex-direction: column-reverse; }
     .contenedorMateriales .contenedorMateriales__filamentos {
-      width: 600px;
-      margin-top: 10vh; }
+      width: 300px;
+      margin-top: 6vh; }
+    .contenedorMateriales .tabla {
+      font-size: 13px; }
   .containerPasos {
     width: 100%;
     padding-top: 60px;

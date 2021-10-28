@@ -37,6 +37,8 @@
       </nav>
     </header>
 
+
+
     <main>
         <div class="contenedorMateriales">
 
@@ -44,7 +46,7 @@
         <img src="../images/materiales.png" alt="filamento" class="contenedorMateriales__filamentos">
 
 
-        <table>
+        <table class="tabla">
             <tr class="encabezadoTabla">
                 <th>Material</th>
                 <th>Temperatura</th>
@@ -100,31 +102,38 @@
     </main>
 
     <footer >
-        <div class="piePagina">
-          <div class="piePagina__redes">
-            <ul>
-              <li><p>NUESTRAS REDES</p></li>
-              <li> <i class="bi bi-instagram redesSociales"><p>Instagram</p></i></li>
-              <li> <i class="bi bi-facebook redesSociales"><p>Facebook</p></i></li>
-              <li> <i class="bi bi-youtube redesSociales"><p>Youtube</p></i></li>
-            </ul>
-          </div>
-  
-          <div class="piePagina__contacto">
-            <ul>
-              <li>CONTACTANOS</li>
-              <li><i class="bi bi-caret-right-fill"></i><a href="contacto.html"><p>Pagina de contacto</p> </a></li>
-              <li><i class="bi bi-envelope-fill"><p>solid3dimpresiones@gmail.com</p></i></li>
-              <li><i class="bi bi-geo-alt-fill"></i><p>Direccion: 56 Nº 723</p> </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">
-          <p> SOLID Maker © 2021 | Nicolas Quattrocchi</p>
+      <div class="piePagina">
+        <div class="piePagina__redes">
+          <p>NUESTRAS REDES</p>
+          <ul class="itemsRedes">
+            <li> <i class="bi bi-instagram redesSociales"><p class="redes">Instagram</p></i></li>
+            <li> <i class="bi bi-facebook redesSociales"><p class="redes">Facebook</p></i></li>
+            <li> <i class="bi bi-youtube redesSociales"><p class="redes">Youtube</p></i></li>
+          </ul>
         </div>
 
+        <div class="piePagina__contacto">
+          <p>CONTACTANOS</p>
+          <ul>
+            <li><i class="bi bi-caret-right-fill"></i><a href="pages/contacto.html"><p>Pagina de contacto</p> </a></li>
+            <li><i class="bi bi-envelope-fill"><p>solid3dimpresiones@gmail.com</p></i></li>
+            <li><i class="bi bi-geo-alt-fill"></i><p>Direccion: 56 Nº 723</p> </li>
+            <li><i class="bi bi-telephone"></i><p>Telefono: 221 314 - 3661</p> </li>
+          </ul>
+        </div>
 
-    </footer>
+        <div class="piePagina__newsletter">
+          <p>SUSCRIBETE A NUESTRO NEWS LETTER</p>
+          <form action="">
+            <input class="inputNews" type="email" value="Ingrese su email">
+            <input class="inputButtom" type="submit" value="suscribirse">
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p> Diseño y desarrollo | Nicolas Quattrocchi</p>
+      </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
     <!-- Optional JavaScript -->
